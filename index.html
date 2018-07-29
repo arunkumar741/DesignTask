@@ -1,0 +1,63 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href="css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		<link href="css/jquery-radiocharm.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="css/style.css">
+    <body>
+    	<div class="container clearfix">
+    		<div class="header">
+    			Change meal plan    			
+    		</div>    		
+				<div class="main">
+					<h4 class="h4class">SUBSCRIPTION PLAN</h3>
+					<select name="selection" id="" class="selection">
+						
+							 <option value="0">MEDIUM(12 ITEMS)</option>
+						     <option value="1">Audi</option>
+						     <option value="2">BMW</option>
+						     <option value="3">Citroen</option>
+						     <option value="4">Ford</option>
+						     <option value="5">Honda</option>
+					     
+					</select>
+				</div>				
+				<div class="content"> 
+					<span style="margin: 0 10px;color:#00a9ab;font-weight:bold">Once a week</span>
+				  <input type="checkbox" name="toggle" class="sw" id="toggle-2">
+				  <label for="toggle-2"><span>With a little label</span><sup style="margin: 0 3px;color:#00a9ab">New</sup>
+
+				  </label>
+				  <br>
+				  <p class="para2">choose when you want deliverables</p>
+				  <div class="radaio-labels">
+					 <span class="disabledbuttons"><i class="fas fa-times-circle"></i> SUN</span><span class="disabledbuttons"><i class="fas fa-times-circle"></i>MON</span>
+					  <input checked data-radiocharm-background-color="00a3aa" data-radiocharm-label="TUE <br> 12 times" name="default_background" type="radio" value="html5" />
+					  <span class="disabledbuttons"><i class="fas fa-times-circle"></i>WED</span>
+					  <input data-radiocharm-label="THU <br>12 items" data-radiocharm-background-color="00a3aa" name="default_background" type="radio" value="css3" />
+					  <span class="disabledbuttons"><i class="fas fa-times-circle"></i> FRI</span><span class="disabledbuttons"><i class="fas fa-times-circle"></i>SAT</span>
+				</div>
+
+				<br>
+				<p class="para1">You will receive <span style="color: #00a3aa;font-weight: bold">12 items on Tuesdays</span></p>
+
+				
+				<button class="newbutton"  >DONE</button>
+		</div>
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<script src="js/jquery-radiocharm.js"></script>
+		<script>
+			$(document).ready(function(){
+			$('input:radio').radiocharm();
+			});	
+		</script>
+    </body>
+</html>
